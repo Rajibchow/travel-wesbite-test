@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotels - Wander</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ Header / Navigation Bar ============ -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">🌍 Wander</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="hotel.html" class="active">Hotels</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ Page Header ============ -->
+  <section class="page-banner">
+    <h1>Where You'll Stay</h1>
+    <p>A quick look at how we choose accommodation</p>
+  </section>
+
+  <!-- ============ Hotel Information ============
+       Short intro explaining Wander's selection process, followed by subsequent listings for Hotels. -->
+  <section class="hotel-intro">
+    <p>
+      Every Wander trip includes accommodation that's been personally
+      checked by our team, not just picked from a listings site. We stay
+      close to the areas you'll actually be exploring, and we work with a
+      mix of independent hotels, boutique guesthouses, and trusted chains
+      so there's an option for every budget and travel style.
+    </p>
+  </section>
+
+  <!-- ============ Featured Hotels/Stays ============ -->
+  <section class="destinations">
+    <h2 class="section-title">Featured Stays</h2>
+    <p class="section-subtitle">A sample of the properties we book travellers into</p>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600" alt="The Sakura Inn">
+        <div class="card-body">
+          <h3>The Sakura Inn</h3>
+          <div class="testimonial-stars">★★★★☆</div>
+          <p>Kyoto, Japan — a boutique guesthouse a short walk from the temple district.</p>
+          <span class="price">From $120/night</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600" alt="Villa Bella Vista">
+        <div class="card-body">
+          <h3>Villa Bella Vista</h3>
+          <div class="testimonial-stars">★★★★★</div>
+          <p>Amalfi Coast, Italy — a cliffside villa with a pool and sea views.</p>
+          <span class="price">From $180/night</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600" alt="Coral Bay Resort">
+        <div class="card-body">
+          <h3>Coral Bay Resort</h3>
+          <div class="testimonial-stars">★★★★★</div>
+          <p>Fiji — a beachfront resort with a private lagoon and overwater bungalows.</p>
+          <span class="price">From $210/night</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600" alt="Auckland Harbour Hotel"> 
+        <div class="card-body">
+          <h3>Auckland Harbour Hotel</h3>
+          <div class="testimonial-stars">★★★★☆</div>
+          <p>New Zealand — a modern hotel on the waterfront, minutes from the ferry terminal.</p>
+          <span class="price">From $140/night</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <h2 class="section-title" style="margin-top: 3rem;">What's Included Everywhere</h2>
+  <div class="hotel-grid">
+
+    <div class="hotel-item">
+      <h3>💰 Budget-Friendly</h3>
+      <p>Clean, well-located hostels and guesthouses for travellers who'd rather spend on experiences.</p>
+    </div>
+
+    <div class="hotel-item">
+      <h3>🏨 Mid-Range</h3>
+      <p>Comfortable 3-4 star hotels with good amenities, usually our most popular pick.</p>
+    </div>
+
+    <div class="hotel-item">
+      <h3>✨ Luxury</h3>
+      <p>Boutique and 5-star stays for travellers looking to treat themselves.</p>
+    </div>
+
+    <div class="hotel-item">
+      <h3>📶 Standard Amenities</h3>
+      <p>Free Wi-Fi, breakfast options, and 24-hour front desk support at every property we recommend.</p>
+    </div>
+
+    <div class="hotel-item">
+      <h3>📍 Central Locations</h3>
+      <p>We prioritize stays within easy reach of the sights and activities on your itinerary.</p>
+    </div>
+
+    <div class="hotel-item">
+      <h3>🔄 Flexible Changes</h3>
+      <p>Need to adjust your stay? Our support team can help you rebook with no hassle.</p>
+    </div>
+
+  </div>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Wander Travel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

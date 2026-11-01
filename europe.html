@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Europe - Wander</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ Header / Navigation Bar ============ -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">🌍 Wander</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html" class="active">Locations</a></li>
+        <li><a href="hotel.html">Hotels</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ Page Header ============ -->
+  <section class="page-banner">
+    <h1>Europe</h1>
+    <p>History, art, and unforgettable food</p>
+  </section>
+
+  <!-- ============ Primary Destinations ============ -->
+  <section class="destinations">
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search a destination...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="card-grid" id="cardGrid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=600" alt="Italy">
+        <div class="card-body">
+          <h3>Italy</h3>
+          <p>Historic ruins, world-class food, and romantic canals.</p>
+          <span class="price">From $950</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="France">
+        <div class="card-body">
+          <h3>France</h3>
+          <p>Iconic landmarks, fine art, and delicious pastries.</p>
+          <span class="price">From $980</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1503152394-c571994fd383?w=600" alt="Greece">
+        <div class="card-body">
+          <h3>Greece</h3>
+          <p>Whitewashed villages, blue waters, and ancient ruins.</p>
+          <span class="price">From $890</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p id="noResults" class="no-results" style="display:none;">No destinations match your search.</p>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Wander Travel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

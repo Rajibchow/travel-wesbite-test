@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wander - Travel The World</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ Header / Navigation Bar ============
+       This same header shall remain consistent across all pages -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">🌍 Wander</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="hotel.html">Hotels</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ Hero Section ============ -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore The World</h1>
+      <p>Find your next international adventure, one destination at a time.</p>
+      <a href="locations.html" class="btn-link">Browse Locations</a>
+    </div>
+  </section>
+
+   <!-- ============ Image Carousel ============
+       Each slide is a clickable link to that region's page. -->
+  <section class="carousel-section">
+    <h2 class="section-title">Popular Destinations</h2>
+    <p class="section-subtitle">Tap a photo to explore that region</p>
+
+    <div class="carousel" id="carousel">
+
+      <a href="asia.html" class="carousel-slide active">
+        <img src="https://images.unsplash.com/photo-1752926269883-78794047bac5?w=1200" alt="Turkey">
+        <div class="carousel-caption"><h3>Turkey</h3></div>
+      </a>
+
+      <a href="europe.html" class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=1200" alt="Italy">
+        <div class="carousel-caption"><h3>Italy</h3></div>
+      </a>
+
+      <a href="oceania.html" class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=1200" alt="Australia">
+        <div class="carousel-caption"><h3>Australia</h3></div>
+      </a>
+
+      <a href="asia.html" class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200" alt="Japan">
+        <div class="carousel-caption"><h3>Japan</h3></div>
+      </a>
+
+      <a href="europe.html" class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1503152394-c571994fd383?w=1200" alt="Greece">
+        <div class="carousel-caption"><h3>Greece</h3></div>
+      </a>
+
+      <a href="oceania.html" class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=1200" alt="New Zealand">
+        <div class="carousel-caption"><h3>New Zealand</h3></div>
+      </a>
+
+      <!-- Arrow buttons to move manually -->
+      <button class="carousel-arrow prev" id="carouselPrev">&#10094;</button>
+      <button class="carousel-arrow next" id="carouselNext">&#10095;</button>
+    </div>
+
+    <!-- Dots: one per slide, in the same order as the slides above -->
+    <div class="carousel-dots" id="carouselDots">
+      <button class="carousel-dot active" data-slide="0"></button>
+      <button class="carousel-dot" data-slide="1"></button>
+      <button class="carousel-dot" data-slide="2"></button>
+      <button class="carousel-dot" data-slide="3"></button>
+      <button class="carousel-dot" data-slide="4"></button>
+      <button class="carousel-dot" data-slide="5"></button>
+    </div>
+  </section>
+
+   <!-- ============ Why Wander (short preview...) ============ -->
+  <section class="about">
+    <div class="about-content">
+      <h2 class="section-title">Why Travel With Wander?</h2>
+      <div class="about-grid">
+        <div class="about-item">
+          <h3>✈️ Best Deals</h3>
+          <p>We work with local guides to bring you affordable, authentic trips.</p>
+        </div>
+        <div class="about-item">
+          <h3>🗺️ Handpicked Spots</h3>
+          <p>Every destination is chosen for its culture, safety, and beauty.</p>
+        </div>
+        <div class="about-item">
+          <h3>🛎️ 24/7 Support</h3>
+          <p>Our team is always here to help before, during, and after your trip.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Wander Travel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

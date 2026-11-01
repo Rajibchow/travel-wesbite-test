@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oceania - Wander</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ Header / Navigation Bar ============ -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">🌍 Wander</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html" class="active">Locations</a></li>
+        <li><a href="hotel.html">Hotels</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ Page Header ============ -->
+  <section class="page-banner">
+    <h1>Oceania</h1>
+    <p>Coastlines, reefs, and laid-back island life</p>
+  </section>
+
+  <!-- ============ Primary Destinations ============ -->
+  <section class="destinations">
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search a destination...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="card-grid" id="cardGrid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=600" alt="Australia">
+        <div class="card-body">
+          <h3>Australia</h3>
+          <p>The Outback, the Great Barrier Reef, and coastal cities.</p>
+          <span class="price">From $1,350</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=600" alt="New Zealand">
+        <div class="card-body">
+          <h3>New Zealand</h3>
+          <p>Dramatic fjords, glaciers, and adventure sports.</p>
+          <span class="price">From $1,100</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1573790387438-4da905039392?w=600" alt="Fiji">
+        <div class="card-body">
+          <h3>Fiji</h3>
+          <p>Coral reefs, warm lagoons, and island hospitality.</p>
+          <span class="price">From $1,250</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p id="noResults" class="no-results" style="display:none;">No destinations match your search.</p>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Wander Travel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

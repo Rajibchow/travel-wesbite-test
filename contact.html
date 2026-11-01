@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Wander</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ Header / Navigation Bar ============ -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">🌍 Wander</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="hotel.html">Hotels</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ Header ============ -->
+  <section class="page-banner">
+    <h1>Get In Touch</h1>
+    <p>Questions about a trip? We'd love to hear from you.</p>
+  </section>
+
+  <!-- ============ Primary Contact Information ============ -->
+  <section class="contact-info">
+    <div class="info-item">
+      <h3>📍 Address</h3>
+      <p>123 Travel Lane, Auckland, New Zealand</p>
+    </div>
+    <div class="info-item">
+      <h3>📧 Email</h3>
+      <p>hello@wandertravel.com</p>
+    </div>
+    <div class="info-item">
+      <h3>📞 Phone</h3>
+      <p>+64 21 123 4567</p>
+    </div>
+  </section>
+
+  <!-- ============ Primary Inquiry Form ============
+       If any travel-related questions or inquires exist, they ought to be submitted through this form. -->
+  <section class="contact">
+    <h2 class="section-title">Send Us an Inquiry</h2>
+    <p class="section-subtitle">Have a question about a trip? Fill this out and we'll get back to you.</p>
+
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="nameInput" placeholder="Your Name" required>
+      <input type="email" id="emailInput" placeholder="Your Email" required>
+      <input type="text" id="subjectInput" placeholder="Subject" required>
+      <textarea id="messageInput" placeholder="Your message..." required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+
+    <p id="formMessage" class="form-message"></p>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Wander Travel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

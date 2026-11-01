@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locations - Wander</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <!-- ============ Header / Navigation Bar ============ -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">🌍 Wander</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html" class="active">Locations</a></li>
+        <li><a href="hotel.html">Hotels</a></li>
+        <li><a href="testimonial.html">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+ <!-- ============ Page Header ============ -->
+  <section class="page-banner">
+    <h1>Explore by Region</h1>
+    <p>Pick a region to see its destinations</p>
+  </section>
+
+  <!-- ============ Regions / Locations ============
+       3 big cards, one per region. -->
+
+  <div class="region-grid">
+
+    <a href="asia.html" class="region-card">
+      <img src="https://images.unsplash.com/photo-1752926269883-78794047bac5?w=800" alt="Asia">
+      <div class="region-overlay">
+        <h3>Asia</h3>
+        <p>Temples, street food, and vibrant cities.</p>
+        <span class="btn-link">Explore Asia</span>
+      </div>
+    </a>
+
+    <a href="europe.html" class="region-card">
+      <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=800" alt="Europe">
+      <div class="region-overlay">
+        <h3>Europe</h3>
+        <p>History, art, and unforgettable food.</p>
+        <span class="btn-link">Explore Europe</span>
+      </div>
+    </a>
+
+    <a href="oceania.html" class="region-card">
+      <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800" alt="Oceania">
+      <div class="region-overlay">
+        <h3>Oceania</h3>
+        <p>Coastlines, reefs, and laid-back island life.</p>
+        <span class="btn-link">Explore Oceania</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Wander Travel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
